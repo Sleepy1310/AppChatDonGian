@@ -11,8 +11,12 @@
 
 ## Hướng dẫn đăng nhập (Dành cho kiểm thử)
 Để thuận tiện cho việc chấm bài mà không cần chờ tin nhắn OTP thật, tôi đã cấu hình tài khoản kiểm thử sau trên Firebase Console:
-- **Số điện thoại:** `+84 123456789`
-- **Mã OTP cố định:** `123456`
+- user1
+- **Số điện thoại:** `+84 0988776655`
+- **Mã OTP cố định:** `111111`
+- user 2
+- **Số điện thoại:** `+84 0911223344`
+- **Mã OTP cố định:** `222222`
 
 ## Cài đặt và sử dụng
 1. Tải file APK từ thư mục `app/build/outputs/apk/debug/app-debug.apk` hoặc từ mục Releases.
