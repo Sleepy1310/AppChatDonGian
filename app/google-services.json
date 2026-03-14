@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158748384237",
+    "project_id": "appchatdongian-9c19d",
+    "storage_bucket": "appchatdongian-9c19d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158748384237:android:3431b0308f8e7d52d5e5e4",
+        "android_client_info": {
+          "package_name": "com.example.appchatdongian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBayH6lIFZCmpM9vOkP7pqDi70bIcA69nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

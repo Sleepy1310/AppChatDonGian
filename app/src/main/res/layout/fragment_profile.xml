@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="@color/my_primary"
+        android:src="@drawable/person_icon"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/profile_pic_image_view"
+        android:contentDescription="Ảnh đại diện" />
+
+    <EditText
+        android:id="@+id/profile_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Tên người dùng"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:layout_margin="10dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="SĐT"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:layout_margin="10dp"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/btn_rounded_corner"
+            android:text="Cập nhật"
+            android:id="@+id/profile_update"/>
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="@color/my_primary"
+            android:layout_marginTop="10dp"
+            android:id="@+id/profile_progressbar"
+            android:visibility="gone"/>
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:gravity="center"
+        android:text="Đăng xuất"
+        android:textColor="@color/my_primary"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/logout_btn"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>
