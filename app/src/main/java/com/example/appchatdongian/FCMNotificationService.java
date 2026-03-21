@@ -31,15 +31,26 @@ public class FCMNotificationService extends FirebaseMessagingService {
 
         String title = "";
         String body = "";
+
+        // 1. Thử lấy từ Notification (thường có khi App đóng)
         if (message.getNotification() != null) {
             title = message.getNotification().getTitle();
             body = message.getNotification().getBody();
         }
 
-        // Lấy userId người gửi từ phần Data payload
+        // 2. Nếu Title/Body vẫn trống, lấy từ Data (thường có khi App đang mở)
+        if (title == null || title.isEmpty()) {
+            title = message.getData().get("title");
+            body = message.getData().get("body");
+        }
+
+        // 3. Lấy userId người gửi để khi nhấn vào thông báo sẽ mở đúng phòng chat
         String senderId = message.getData().get("userId");
 
-        showNotification(title, body, senderId);
+        // Chỉ hiển thị nếu có nội dung tin nhắn
+        if (body != null && !body.isEmpty()) {
+            showNotification(title, body, senderId);
+        }
     }
 
     private void showNotification(String title, String body, String senderId) {
